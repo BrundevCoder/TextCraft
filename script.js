@@ -8,6 +8,8 @@ const textFontWeightInput = document.getElementById("textFontWeight");
 const hasShadowCheckBox = document.getElementById("ShadowCheck");
 const shadowColorInput = document.getElementById("ShadowColor");
 
+const downloadButton = document.getElementById("downloadButton");
+
 function loadText() {
     const text = textInput.value;
 
@@ -36,3 +38,18 @@ textFontSizeInput.addEventListener("input", loadText);
 textFontWeightInput.addEventListener("input", loadText);
 hasShadowCheckBox.addEventListener("input", loadText);
 shadowColorInput.addEventListener("input", loadText);
+
+downloadButton.addEventListener("click", () => {
+    html2canvas(textDisplayer, {
+        useCORS: true,
+        allowTaint: true,
+        scale: 2,
+        logging: false,
+        backgroundColor: null
+    }).then(canvas => {
+        let a = document.createElement("a");
+        a.download = "new_text";
+        a.href = canvas.toDataURL();
+        a.click();
+    })
+})

@@ -188,3 +188,51 @@ select option:checked {
     background: #235464;
     color: #fff;
 }
+
+#downloadButton {
+    cursor: pointer;
+    font-family: "Schoolbell", sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    padding: .7rem 1rem;
+    border-radius: 8px;
+    border: 1.5px solid #000;
+    background: #95d8ef;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+    transition: 125ms ease;
+}
+
+#downloadButton:hover {
+    transform: scale(1.05);
+}
+
+#downloadButton:active {
+    transform: scale(0.95);
+}
+
+@media (max-width: 1025px) {
+    .grid-container {
+        grid-template-areas:
+        "textShower textPropreties"
+        "textShower textPropreties"
+        "textShower textPropreties"
+        "textShower textPropreties"
+        "textInputer textInputer";
+        grid-template-columns: repeat(2, 1fr);
+    }
+    main {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 610px) {
+    .grid-container {
+        grid-template-areas:
+        "textShower"
+        "textShower"
+        "textPropreties"
+        "textPropreties"
+        "textInputer";
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
