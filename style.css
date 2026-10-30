@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Schoolbell&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Coral+Pixels&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pixelify+Sans:wght@400..700&family=Rubik:ital,wght@0,300..900;1,300..900&family=Schoolbell&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -127,13 +126,13 @@ main {
 }
 
 .prop-config {
-    font-family: "Schoolbell", sans-serif;
+    font-family: Arial, sans-serif;
     font-weight: 600;
     font-size: 17px;
 }
 
 .sub-title {
-    font-family: "Schoolbell", sans-serif;
+    font-family: Arial, sans-serif;
     font-weight: 700;
     font-size: 20px;
 }
@@ -141,7 +140,7 @@ main {
 .sub-settings {
     display: flex;
     flex-direction: column;
-    gap: 7px;
+    gap: 17px;
     list-style: none;
 }
 
@@ -157,4 +156,35 @@ hr {
     border: dashed 1px #378aa6;
     margin-bottom: .35rem;
     margin-top: .35rem;
+}
+
+input {
+    font-family: "Schoolbell", sans-serif;
+    font-size: 20px;
+}
+
+input[type=color] {
+    outline: none;
+    border: none;
+    background: none;
+    border-radius: 80%;
+}
+
+input[type=number] {
+    background: none;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid rgb(5, 137, 231);
+}
+
+select {
+    border: none;
+    font-size: 20px;
+    background: none;
+    border-bottom: 2px solid rgb(5, 137, 231);
+}
+
+select option:checked {
+    background: #235464;
+    color: #fff;
 }

@@ -16,17 +16,29 @@
         <section class="grid-container">
             <div class="text-display txt-container">
                 <div class="text-background">
-                    <p class="text-placeholder">Haii :D</p>
+                    <p class="text-placeholder" id="textDisplayer">Haii :D</p>
                 </div>
             </div>
 
             <div class="text-propreties txt-container">
-                <p class="prop-title">Propreties</p>
+                <p class="prop-title">Properties</p>
                 <hr>
                 <ul class="props-list">
                     
                     <ul class="sub-settings">
                         <p class="sub-title">Main Settings:</p>
+                        <li class="prop-config">
+                            <label for="textFont">Font:</label>
+                            <select id="textFont">
+                                <option value="Schoolbell" selected style="font-family: Schoolbell;">Schoolbell</option>
+                                <option value="Arial" style="font-family: Arial;">Arial</option>
+                                <option value="Pixelify Sans" style="font-family: 'Pixelify Sans';">Pixelify Sans</option>
+                                <option value="Coral Pixels" style="font-family: 'Coral Pixels';">Coral Pixels</option>
+                                <option value="Montserrat" style="font-family: Montserrat;">Montserrat</option>
+                                <option value="Rubik" style="font-family: Rubik;">Rubik</option>
+                            </select>
+                        </li>
+
                         <li class="prop-config">
                             <label for="textColor">Color:</label>
                             <input type="color" id="textColor">
@@ -34,12 +46,35 @@
 
                         <li class="prop-config">
                             <label for="textFontSize">Size:</label>
-                            <input type="number" id="textFontSize" min="1" max="56">
+                            <input type="number" id="textFontSize" min="1" max="56" value="50">
+                        </li>
+
+                        <li class="prop-config">
+                            <label for="textFontWeight">Weight:</label>
+                            <select id="textFontWeight">
+                                <option value="100">100</option>
+                                <option value="200">200</option>
+                                <option value="300">300</option>
+                                <option value="400" selected>400</option>
+                                <option value="500">500</option>
+                                <option value="600">600</option>
+                                <option value="700">700</option>
+                                <option value="800">800</option>
+                                <option value="900">900</option>
+                            </select>
                         </li>
                     </ul>
-
+                    
                     <ul class="sub-settings">
                         <p class="sub-title">Shadow Settings:</p>
+                        <li class="prop-config">
+                            <label for="ShadowColor">Shadow?:</label>
+                            <input type="checkbox" id="ShadowCheck">
+                        </li>
+                        <li class="prop-config">
+                            <label for="ShadowColor">Color:</label>
+                            <input type="color" id="ShadowColor" value="#000000">
+                        </li>
                     </ul>
 
                 </ul>
@@ -51,5 +86,7 @@
             </div>
         </section>
     </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
