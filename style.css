@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Schoolbell&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: radial-gradient(circle, #0101010b 6px, transparent 0);
+    background-size: 2rem 2rem;
+    min-height: 100vh;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1rem;
+}
+
+.header p {
+    position: sticky;
+    font-size: 35px;
+    font-family: "Pixelify Sans", sans-serif;
+    font-weight: 800;
+    color: rgb(69, 69, 34);
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+}
