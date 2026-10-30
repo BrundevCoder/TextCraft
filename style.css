@@ -27,3 +27,134 @@ body {
     color: rgb(69, 69, 34);
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
 }
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+    "textShower textShower textPropreties"
+    "textShower textShower textPropreties"
+    "textShower textShower textPropreties"
+    "textShower textShower textPropreties"
+    "textInputer textInputer textInputer";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 15px 10px;
+    width: 100%;
+    max-width: 1100px;
+}
+
+.txt-container {
+    background: #95d8ef;
+    border-radius: 8px;
+    border: 3px dashed rgb(5, 137, 231);
+    padding: 1rem;
+}
+
+.text-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: textShower;
+}
+
+.text-propreties {
+    grid-area: textPropreties;
+}
+
+.text-inputer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: textInputer;
+}
+
+.text-background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    padding: 1.75rem;
+    width: 100%;
+    height: 100%;
+    background: #c1e6f2;
+    border-radius: 5px;
+}
+
+.text-placeholder {
+    font-family: "Schoolbell", sans-serif;
+}
+
+#textInput {
+    padding: .5rem;
+    width: 100%;
+    background: none;
+    border: none;
+    border-bottom: 2px solid rgb(5, 137, 231);
+    border-radius: 4px;
+    outline: none;
+    font-size: 30px;
+    font-family: "Schoolbell", sans-serif;
+    font-weight: 600;
+    color: #49abcb;
+}
+
+#textInput::placeholder {
+    color: #378aa6;
+}
+
+.prop-title {
+    width: 100%;
+    text-align: left;
+    font-family: "Schoolbell", sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.props-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 1rem;
+    list-style: none;
+    padding-left: 1rem;
+}
+
+.prop-config {
+    font-family: "Schoolbell", sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.sub-title {
+    font-family: "Schoolbell", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.sub-settings {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    list-style: none;
+}
+
+.sub-settings li {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    padding-left: .75rem;
+}
+
+hr {
+    border: dashed 1px #378aa6;
+    margin-bottom: .35rem;
+    margin-top: .35rem;
+}
